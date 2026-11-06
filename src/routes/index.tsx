@@ -50,7 +50,7 @@ function Index() {
                 <li>Campaign strategy and concept development</li>
                 <li>Audience research and messaging frameworks</li>
                 <li>Social and content planning that builds momentum</li>
-                <li>Launch narratives that give people a reason to care</li>
+                <li>Go-to-market plans that turn attention into signups</li>
               </ul>
             </div>
           </div>
@@ -65,7 +65,7 @@ function Index() {
                 <li>Landing pages designed and built end to end</li>
                 <li>Brand visuals and identity systems</li>
                 <li>AI-assisted workflows for faster, sharper output</li>
-                <li>Design that guides visitors toward a clear next step</li>
+                <li>Conversion-focused layouts that turn visitors into customers</li>
               </ul>
             </div>
           </div>
