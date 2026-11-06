@@ -46,7 +46,7 @@ function Index() {
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">marketer</h2>
              <p className="mt-4 max-w-md text-sm leading-7 text-muted-foreground sm:text-base">Audience-led brand stories, campaigns and content that connect.</p>
             <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-96 group-hover/role:opacity-100">
-              <ul className="dash-list mt-5 max-w-sm text-sm leading-6 text-muted-foreground">
+              <ul className="dash-list mt-5 max-w-sm space-y-2 text-sm leading-6 text-muted-foreground">
                 <li>Campaign strategy and concept development</li>
                 <li>Audience research and messaging frameworks</li>
                 <li>Social and content planning that builds momentum</li>
@@ -61,7 +61,7 @@ function Index() {
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
              <p className="mt-4 max-w-md text-sm leading-7 text-muted-foreground sm:text-base">AI-native design for landing pages and brand visuals, balancing aesthetics and clarity.</p>
             <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-96 group-hover/role:opacity-100">
-              <ul className="dash-list mt-5 max-w-sm text-sm leading-6 text-muted-foreground">
+              <ul className="dash-list mt-5 max-w-sm space-y-2 text-sm leading-6 text-muted-foreground">
                 <li>Landing pages designed and built end to end</li>
                 <li>Brand visuals and identity systems</li>
                 <li>AI-assisted workflows for faster, sharper output</li>
