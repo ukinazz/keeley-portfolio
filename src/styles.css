@@ -201,7 +201,7 @@ body { font-family: var(--font-sans); }
   display: flex;
   flex-direction: column;
   padding: 16px 20px;
-  background: linear-gradient(to top, var(--background) 55%, transparent);
+  background: linear-gradient(to top, var(--background) 78%, transparent);
 }
 @media (min-width: 640px) {
   .work-fan { flex-direction: row; gap: 0; height: 440px; }
