@@ -44,9 +44,9 @@ function Index() {
         <div className="split-roles">
           <div className="role-copy role-marketer group/role">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">marketer</h2>
-             <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Audience-led brand stories, campaigns and content that connect.</p>
+             <p className="mt-4 max-w-md text-sm leading-7 text-muted-foreground sm:text-base">Audience-led brand stories, campaigns and content that connect.</p>
             <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-96 group-hover/role:opacity-100">
-              <p className="mt-6 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">What this covers</p>
+              <p className="mt-6 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">As a marketer</p>
               <ul className="mt-3 max-w-sm text-sm leading-6">
                 <li className="border-t border-border py-2.5">Campaign strategy and concept development, from first idea to full rollout</li>
                 <li className="border-t border-border py-2.5">Audience research and messaging frameworks that keep every piece on point</li>
@@ -60,9 +60,9 @@ function Index() {
           </div>
           <div className="role-copy role-designer group/role">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
-             <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">AI-native design for landing pages and brand visuals, balancing aesthetics and clarity.</p>
+             <p className="mt-4 max-w-md text-sm leading-7 text-muted-foreground sm:text-base">AI-native design for landing pages and brand visuals, balancing aesthetics and clarity.</p>
             <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-96 group-hover/role:opacity-100">
-              <p className="mt-6 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">What this covers</p>
+              <p className="mt-6 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">As a designer</p>
               <ul className="mt-3 max-w-sm text-sm leading-6">
                 <li className="border-t border-border py-2.5">Landing pages designed and built end to end, ready to ship</li>
                 <li className="border-t border-border py-2.5">Brand visuals and identity systems that stay consistent everywhere</li>
