@@ -46,7 +46,7 @@ function Index() {
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">marketer</h2>
              <p className="mt-4 max-w-md text-sm leading-7 text-muted-foreground sm:text-base">Audience-led brand stories, campaigns and content that connect.</p>
             <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-96 group-hover/role:opacity-100">
-              <ul className="mt-5 max-w-sm list-disc space-y-2 pl-5 font-greeting text-sm leading-6 text-muted-foreground marker:text-foreground">
+              <ul className="mt-5 max-w-sm list-disc space-y-2 pl-5 text-sm leading-6 text-muted-foreground marker:text-foreground">
                 <li>Campaign strategy and concept development</li>
                 <li>Audience research and messaging frameworks</li>
                 <li>Social and content planning that builds momentum</li>
@@ -55,13 +55,13 @@ function Index() {
             </div>
           </div>
           <div className="portrait-space hidden sm:block">
-            <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-[min(52vh,460px)] w-auto max-w-none object-contain" />
+            <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-[min(72vh,620px)] w-auto max-w-none object-contain" />
           </div>
           <div className="role-copy role-designer group/role">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
              <p className="mt-4 max-w-md text-sm leading-7 text-muted-foreground sm:text-base">AI-native design for landing pages and brand visuals, balancing aesthetics and clarity.</p>
             <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-96 group-hover/role:opacity-100">
-              <ul className="mt-5 max-w-sm list-disc space-y-2 pl-5 font-greeting text-sm leading-6 text-muted-foreground marker:text-foreground">
+              <ul className="mt-5 max-w-sm list-disc space-y-2 pl-5 text-sm leading-6 text-muted-foreground marker:text-foreground">
                 <li>Landing pages designed and built end to end</li>
                 <li>Brand visuals and identity systems</li>
                 <li>AI-assisted workflows for faster, sharper output</li>
