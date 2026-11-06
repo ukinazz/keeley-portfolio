@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { portfolioWork } from "@/lib/portfolio-work";
 import { experience } from "@/lib/experience";
@@ -136,7 +136,7 @@ function Index() {
 
       <section id="contact" className="mx-auto max-w-6xl px-6 py-24 text-center">
          <h2 className="font-display text-4xl font-bold md:text-6xl">Let's work together.</h2>
-        <Button asChild size="lg" className="mt-8"><a href="mailto:keeeleyz@gmail.com">keeeleyz@gmail.com <ArrowUpRight /></a></Button>
+        <Button asChild size="lg" className="mt-8"><a href="mailto:keeeleyz@gmail.com"><Mail /> keeeleyz@gmail.com</a></Button>
       </section>
     </main>
   );
