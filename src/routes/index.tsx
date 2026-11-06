@@ -72,7 +72,7 @@ function Index() {
         </div>
       </section>
 
-      <section id="work" className="border-t border-border bg-card">
+      <section id="work">
         <div className="mx-auto max-w-6xl px-6 py-14 sm:py-16">
         <div className="mb-10 flex items-center gap-6"><div className="h-px flex-1 bg-border" /><h2 className="text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">Selected work</h2><div className="h-px flex-1 bg-border" /></div>
         <div className="work-fan">
