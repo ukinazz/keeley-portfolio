@@ -75,22 +75,16 @@ function Index() {
       <section id="work" className="border-t border-border bg-card">
         <div className="mx-auto max-w-6xl px-6 py-14 sm:py-16">
         <div className="mb-10 flex items-center gap-6"><div className="h-px flex-1 bg-border" /><h2 className="text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">Selected work</h2><div className="h-px flex-1 bg-border" /></div>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="work-fan">
           {portfolioWork.map((w) => (
-            <article key={w.title} className="group">
-              <Button asChild variant="ghost" className="block h-auto w-full overflow-hidden rounded-md border border-border bg-background p-0 transition-transform duration-500 motion-safe:hover:-translate-y-1">
-                <a href={w.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${w.title} website (opens in a new tab)`}>
-                  <img src={w.preview} alt={`${w.title} landing page built by Keeley Zou`} width={2560} height={1600} loading="lazy" className="aspect-[8/5] w-full object-cover" />
-                </a>
-              </Button>
-              <div className="mt-4 flex items-center justify-between gap-3">
-                <h3 className="font-display text-2xl">{w.title}</h3>
-                <Button asChild variant="link" className="h-auto shrink-0 p-0 text-sm text-muted-foreground">
-                  <a href={w.url} target="_blank" rel="noopener noreferrer" aria-label={`Open ${w.domain} (opens in a new tab)`}>{w.domain}<ArrowUpRight className="size-4" /></a>
-                </Button>
-              </div>
-              <p className="mt-1 text-sm text-muted-foreground">Landing page design & build</p>
-            </article>
+            <a key={w.title} href={w.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${w.title} website (opens in a new tab)`} className="work-card group">
+              <img src={w.preview} alt={`${w.title} landing page built by Keeley Zou`} width={2560} height={1600} loading="lazy" className="work-card-img" />
+              <span className="work-card-caption">
+                <span className="font-display text-2xl">{w.title}</span>
+                <span className="mt-1 flex items-center gap-1 text-sm text-muted-foreground">{w.domain}<ArrowUpRight className="size-4" /></span>
+                <span className="mt-2 text-xs text-muted-foreground">Landing page design & build</span>
+              </span>
+            </a>
           ))}
         </div>
         </div>
