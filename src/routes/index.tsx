@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { portfolioWork } from "@/lib/portfolio-work";
-import keeleyPortrait from "@/assets/keeley-portrait.png.asset.json";
+import keeleyPortrait from "@/assets/keeley-portrait-trimmed.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
