@@ -40,12 +40,12 @@ function Index() {
         <div className="split-roles">
           <div className="role-copy">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">marketer</h2>
-             <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Finding the angle that makes a brand worth noticing. Campaigns and content built around what matters to your audience.</p>
+             <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Brand stories, campaigns and content that speak to the right people.</p>
           </div>
           <div className="portrait-space" aria-label="Space reserved for Keeley's future portrait" />
           <div className="role-copy">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
-             <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Giving good ideas a look that feels right. From brand visuals to landing pages, every detail works toward a clear next step.</p>
+             <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Landing pages and brand visuals that balance personality, clarity and ease of use.</p>
           </div>
         </div>
       </section>
