@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { portfolioWork } from "@/lib/portfolio-work";
+import keeleyPortrait from "@/assets/keeley-portrait.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -42,7 +43,9 @@ function Index() {
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">marketer</h2>
              <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Audience-led brand stories, campaigns and content that connect.</p>
           </div>
-          <div className="portrait-space" aria-label="Space reserved for Keeley's future portrait" />
+          <div className="portrait-space">
+            <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-full w-full object-cover object-bottom" />
+          </div>
           <div className="role-copy">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
              <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">AI-native design for landing pages and brand visuals, balancing aesthetics and clarity.</p>
