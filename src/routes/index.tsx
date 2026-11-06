@@ -46,8 +46,8 @@ function Index() {
             <div className="role-head group/role">
               <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">marketer</h2>
               <p className="mt-4 max-w-md text-sm leading-7 text-muted-foreground sm:text-base">Audience-led brand stories, campaigns and content that connect.</p>
-              <div className="role-details absolute left-0 top-full z-20 mt-2 w-80 max-w-[80vw] overflow-hidden">
-                <ul className="dash-list mt-3 space-y-2 text-sm leading-6 text-muted-foreground">
+              <div className="role-details absolute left-0 top-full z-20 -mt-4 w-80 max-w-[80vw] overflow-hidden">
+                <ul className="dash-list mt-0 space-y-2 text-sm leading-6 text-muted-foreground">
                   <li>Campaign strategy and concept development</li>
                   <li>Audience research and messaging frameworks</li>
                   <li>Social and content planning that builds momentum</li>
@@ -63,8 +63,8 @@ function Index() {
             <div className="role-head group/role">
               <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
               <p className="mt-4 max-w-md text-sm leading-7 text-muted-foreground sm:text-base">AI-native design for landing pages and brand visuals, balancing aesthetics and clarity.</p>
-              <div className="role-details absolute left-0 top-full z-20 mt-2 w-80 max-w-[80vw] overflow-hidden">
-                <ul className="dash-list mt-3 space-y-2 text-sm leading-6 text-muted-foreground">
+              <div className="role-details absolute left-0 top-full z-20 -mt-4 w-80 max-w-[80vw] overflow-hidden">
+                <ul className="dash-list mt-0 space-y-2 text-sm leading-6 text-muted-foreground">
                   <li>Landing pages designed and built end to end</li>
                   <li>Brand visuals and identity systems</li>
                   <li>AI-assisted workflows for faster, sharper output</li>
