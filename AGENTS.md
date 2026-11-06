@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Portfolio presentation
+- Keep the split-role introduction and reserved portrait area in the index route, with responsive sizing in the global stylesheet, so a future uploaded portrait can be added without restructuring the page.
