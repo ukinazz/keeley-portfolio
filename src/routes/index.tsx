@@ -23,9 +23,9 @@ function Index() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <header className="bg-primary text-primary-foreground">
-        <nav aria-label="Main navigation" className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-5 text-sm">
-          <a href="#" aria-label="Keeley Zou home" className="font-display text-2xl font-bold">kz<span className="text-muted-foreground">.</span></a>
-          <div className="flex items-center gap-5 sm:gap-8">
+        <nav aria-label="Main navigation" className="mx-auto grid max-w-6xl grid-cols-[1fr_auto_1fr] items-center px-6 py-5 text-sm">
+          <a href="#" aria-label="Keeley Zou home" className="justify-self-start font-display text-2xl font-bold">kz<span className="text-muted-foreground">.</span></a>
+          <div className="flex items-center gap-4 sm:gap-8">
             <Button asChild variant="link" className="h-auto p-0 font-normal text-primary-foreground/75"><a href="#about">about</a></Button>
             <Button asChild variant="link" className="h-auto p-0 font-normal text-primary-foreground/75"><a href="#work">portfolio</a></Button>
             <Button asChild variant="link" className="h-auto p-0 font-normal text-primary-foreground/75"><a href="#contact">contact</a></Button>
@@ -35,7 +35,7 @@ function Index() {
 
       <section className="portfolio-intro mx-auto max-w-6xl px-6">
         <div className="pt-8 text-center">
-          <h1 className="text-sm font-medium">Hi, I'm Keeley Zou</h1>
+          <h1 className="font-display text-2xl font-medium sm:text-4xl">Hi, I'm Keeley Zou</h1>
         </div>
         <div className="split-roles">
           <div className="role-copy">
