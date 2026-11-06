@@ -178,7 +178,7 @@ body { font-family: var(--font-sans); }
 @media (min-width: 640px) {
   .portrait-space { display: flex; align-items: flex-end; justify-content: center; }
 }
-.role-copy { padding-bottom: 36px; }
+.role-copy { position: relative; z-index: 1; padding-bottom: 36px; }
 @media (max-width: 639px) {
   .split-roles { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; gap: 16px; }
   .role-copy { padding-bottom: 0; }
