@@ -156,7 +156,7 @@ body { font-family: var(--font-sans); }
 .split-roles {
   display: grid;
   flex: 1;
-  grid-template-columns: minmax(0, 1fr) minmax(180px, 1.25fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 1.6fr) minmax(0, 1fr);
   align-items: center;
   min-height: 430px;
   gap: 24px;
