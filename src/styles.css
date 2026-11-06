@@ -167,13 +167,13 @@ body { font-family: var(--font-sans); }
     grid-template-columns: minmax(0, 1.9fr) minmax(200px, 0.8fr) minmax(300px, 1fr);
   }
   .split-roles:has(.role-marketer:hover) .portrait-space { justify-content: flex-start; }
-  .split-roles:has(.role-marketer:hover) .role-designer { transform: translateX(24px); }
+  .split-roles:has(.role-marketer:hover) .role-designer { transform: translateX(16px); }
   .split-roles:has(.role-marketer:hover) .role-designer > p { opacity: 0; }
   .split-roles:has(.role-designer:hover) {
     grid-template-columns: minmax(300px, 1fr) minmax(200px, 0.8fr) minmax(0, 1.9fr);
   }
   .split-roles:has(.role-designer:hover) .portrait-space { justify-content: flex-end; }
-  .split-roles:has(.role-designer:hover) .role-marketer { transform: translateX(-24px); }
+  .split-roles:has(.role-designer:hover) .role-marketer { transform: translateX(-16px); }
   .split-roles:has(.role-designer:hover) .role-marketer > p { opacity: 0; }
 }
 .portrait-space { height: 100%; min-height: 430px; }
