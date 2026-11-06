@@ -3,7 +3,7 @@ import { ArrowUpRight, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { portfolioWork } from "@/lib/portfolio-work";
 import { experience } from "@/lib/experience";
-import keeleyPortrait from "@/assets/keeley-portrait-trimmed.png.asset.json";
+import keeleyPortrait from "@/assets/keeley-portrait-trimmed.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,7 +40,7 @@ function Index() {
           <h1 className="font-greeting text-2xl font-medium sm:text-4xl">Hi, I'm Keeley Zou</h1>
         </div>
         <div className="flex justify-center sm:hidden">
-          <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-64 w-auto object-contain" />
+          <img src={keeleyPortrait} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-64 w-auto object-contain" />
         </div>
         <div className="split-roles">
           <div className="role-copy role-marketer">
@@ -58,7 +58,7 @@ function Index() {
             </div>
           </div>
           <div className="portrait-space hidden sm:block">
-            <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="portrait-img h-[min(72vh,620px)] w-auto max-w-none object-contain" />
+            <img src={keeleyPortrait} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="portrait-img h-[min(72vh,620px)] w-auto max-w-none object-contain" />
           </div>
           <div className="role-copy role-designer">
             <div className="role-head group/role">
