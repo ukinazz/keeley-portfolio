@@ -5,9 +5,9 @@ import krystolabPreview from "@/assets/krystolab.com-sharp-preview.png.asset.jso
 import sarouttPreview from "@/assets/saroutt.com-sharp-preview.png.asset.json";
 
 export const portfolioWork = [
-  { title: "Butterbase", domain: "butterbase.ai", url: "https://butterbase.ai", preview: butterbasePreview.url },
   { title: "ButterKey", domain: "butterkey.ai", url: "https://butterkey.ai", preview: butterkeyPreview.url },
-  { title: "Nira", domain: "withnira.com", url: "https://withnira.com", preview: niraPreview.url },
-  { title: "KrystoLab", domain: "krystolab.com", url: "https://krystolab.com", preview: krystolabPreview.url },
   { title: "Saroutt", domain: "saroutt.com", url: "https://saroutt.com", preview: sarouttPreview.url },
+  { title: "Butterbase", domain: "butterbase.ai", url: "https://butterbase.ai", preview: butterbasePreview.url },
+  { title: "KrystoLab", domain: "krystolab.com", url: "https://krystolab.com", preview: krystolabPreview.url },
+  { title: "Nira", domain: "withnira.com", url: "https://withnira.com", preview: niraPreview.url },
 ];
