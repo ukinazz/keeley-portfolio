@@ -154,36 +154,56 @@ body { font-family: var(--font-sans); }
   min-height: calc(100svh - 72px);
 }
 .split-roles {
+  --ease-role: cubic-bezier(0.22, 1, 0.36, 1);
   display: grid;
   flex: 1;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 1.6fr) minmax(0, 1fr);
   align-items: center;
   min-height: 430px;
   gap: 24px;
-  transition: grid-template-columns 0.5s ease;
+  transition: grid-template-columns 0.7s var(--ease-role);
 }
+.portrait-space { height: 100%; min-height: 430px; }
+.role-copy { position: relative; z-index: 1; padding-bottom: 36px; transition: transform 0.7s var(--ease-role); }
+.role-head { position: relative; display: inline-block; transition: transform 0.7s var(--ease-role); }
+.role-head > p { transition: opacity 0.5s var(--ease-role); }
+.role-details {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.7s var(--ease-role), opacity 0.5s var(--ease-role);
+}
+.role-head:hover .role-details { max-height: 24rem; opacity: 1; }
 @media (min-width: 640px) {
   .split-roles { --role-shift: min(80px, max(16px, (100vw - 1152px) / 2)); }
+  /* Keep description height fixed so rewrapping 3 lines to 2 never shifts the row */
+  .role-head > p { min-height: 5.25rem; }
+  /* Lift the hovered role so the expanded list sits centred instead of only growing down */
+  .role-head:hover { transform: translateY(-72px); }
+  /* Invisible hover buffer while hovered, so the lift never drops the cursor off */
+  .role-head:hover::after { content: ""; position: absolute; inset: -16px -24px -200px -24px; z-index: -1; }
+
+  .portrait-space { position: relative; display: block; height: min(72vh, 620px); }
+  .portrait-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: left 0.7s var(--ease-role), transform 0.7s var(--ease-role);
+  }
+
   .split-roles:has(.role-marketer .role-head:hover) {
     grid-template-columns: minmax(0, 1.9fr) minmax(200px, 0.8fr) minmax(300px, 1fr);
   }
-  .split-roles:has(.role-marketer .role-head:hover) .portrait-space { justify-content: flex-start; }
+  .split-roles:has(.role-marketer .role-head:hover) .portrait-img { left: 0; transform: translateX(0); }
   .split-roles:has(.role-marketer .role-head:hover) .role-designer { transform: translateX(var(--role-shift)); }
   .split-roles:has(.role-marketer .role-head:hover) .role-designer .role-head > p { opacity: 0; }
   .split-roles:has(.role-designer .role-head:hover) {
     grid-template-columns: minmax(300px, 1fr) minmax(200px, 0.8fr) minmax(0, 1.9fr);
   }
-  .split-roles:has(.role-designer .role-head:hover) .portrait-space { justify-content: flex-end; }
+  .split-roles:has(.role-designer .role-head:hover) .portrait-img { left: 100%; transform: translateX(-100%); }
   .split-roles:has(.role-designer .role-head:hover) .role-marketer { transform: translateX(calc(-1 * var(--role-shift))); }
   .split-roles:has(.role-designer .role-head:hover) .role-marketer .role-head > p { opacity: 0; }
 }
-.portrait-space { height: 100%; min-height: 430px; }
-@media (min-width: 640px) {
-  .portrait-space { display: flex; align-items: flex-end; justify-content: center; }
-}
-.role-copy { position: relative; z-index: 1; padding-bottom: 36px; transition: transform 0.5s ease; }
-.role-head > p { transition: opacity 0.4s ease; }
-.role-head { position: relative; display: inline-block; }
 .work-fan { display: flex; flex-direction: column; gap: 16px; }
 .work-card {
   position: relative;
@@ -231,7 +251,7 @@ body { font-family: var(--font-sans); }
 .dash-list li { position: relative; padding-left: 18px; }
 .dash-list li::before { content: "-"; position: absolute; left: 0; color: var(--foreground); }
 @media (min-width: 640px) {
-  .dash-list li { opacity: 0; transform: translateY(8px); transition: opacity 0.25s ease, transform 0.25s ease; }
+  .dash-list li { opacity: 0; transform: translateY(8px); transition: opacity 0.3s var(--ease-role), transform 0.3s var(--ease-role); }
   .role-head:hover .dash-list li { opacity: 1; transform: none; }
   .role-head:hover .dash-list li:nth-child(1) { transition-delay: 0.15s; }
   .role-head:hover .dash-list li:nth-child(2) { transition-delay: 0.28s; }
