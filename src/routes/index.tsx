@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { portfolioWork } from "@/lib/portfolio-work";
+import { experience } from "@/lib/experience";
 import keeleyPortrait from "@/assets/keeley-portrait-trimmed.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -109,6 +110,27 @@ function Index() {
               <li key={s} className="border-t border-border pt-3">{s}</li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div className="mx-auto max-w-6xl px-6 py-16">
+          <h2 className="mb-10 text-center text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">Experience</h2>
+          <div className="grid gap-10 md:grid-cols-3">
+            {experience.map((e) => (
+              <article key={e.company} className="flex flex-col">
+                <span className="text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">{e.field}</span>
+                <a href={e.url} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-1 font-display text-3xl font-bold hover:underline">
+                  {e.company}<ArrowUpRight className="size-5" />
+                </a>
+                <p className="mt-1 text-sm text-muted-foreground">{e.role} · {e.period}</p>
+                <p className="mt-4">{e.summary}</p>
+                <ul className="dash-list mt-4 space-y-2 text-sm leading-6 text-muted-foreground">
+                  {e.highlights.map((h) => <li key={h} className="!opacity-100 !transform-none">{h}</li>)}
+                </ul>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
