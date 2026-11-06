@@ -214,7 +214,7 @@ body { font-family: var(--font-sans); }
     transition: flex 0.5s ease;
   }
   .work-card:first-child { margin-left: 0; }
-  .work-card:hover { flex: 2.8 1 0; z-index: 10; }
+  .work-card:hover { flex: 5 1 0; z-index: 10; }
   .work-card-caption {
     opacity: 0;
     transform: translateY(12px);
