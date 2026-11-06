@@ -21,7 +21,7 @@
 @theme inline {
   --font-display: "Work Sans", sans-serif;
   --font-greeting: "Outfit", sans-serif;
-  --font-sans: "Work Sans", sans-serif;
+  --font-sans: "Open Sauce Two", "Work Sans", sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -147,6 +147,7 @@
 }
 
 html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+@font-face { font-family: "Open Sauce Two"; src: url("/__l5e/assets-v1/49eea7ab-7556-4c70-bd9d-41478f40589e/open-sauce-two-light.ttf") format("truetype"); font-weight: 300 400; font-display: swap; }
 body { font-family: var(--font-sans); }
 .portfolio-intro {
   display: flex;
