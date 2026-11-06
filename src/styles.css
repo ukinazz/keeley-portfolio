@@ -147,8 +147,14 @@
 
 html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 body { font-family: var(--font-sans); }
+.portfolio-intro {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100svh - 72px);
+}
 .split-roles {
   display: grid;
+  flex: 1;
   grid-template-columns: minmax(0, 1fr) minmax(180px, 1.25fr) minmax(0, 1fr);
   align-items: center;
   min-height: 430px;
