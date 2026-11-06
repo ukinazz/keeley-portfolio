@@ -35,7 +35,7 @@ function Index() {
 
       <section className="portfolio-intro mx-auto max-w-6xl px-6">
         <div className="pt-8 text-center">
-          <h1 className="font-display text-2xl font-medium sm:text-4xl">Hi, I'm Keeley Zou</h1>
+          <h1 className="font-greeting text-2xl font-medium sm:text-4xl">Hi, I'm Keeley Zou</h1>
         </div>
         <div className="split-roles">
           <div className="role-copy">
