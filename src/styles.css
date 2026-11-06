@@ -164,13 +164,13 @@ body { font-family: var(--font-sans); }
 }
 @media (min-width: 640px) {
   .split-roles:has(.role-marketer:hover) {
-    grid-template-columns: minmax(0, 1.9fr) minmax(240px, 1fr) minmax(0, 0.6fr);
+    grid-template-columns: minmax(0, 1.9fr) minmax(200px, 0.8fr) minmax(300px, 1fr);
   }
   .split-roles:has(.role-designer:hover) {
-    grid-template-columns: minmax(0, 0.6fr) minmax(240px, 1fr) minmax(0, 1.9fr);
+    grid-template-columns: minmax(300px, 1fr) minmax(200px, 0.8fr) minmax(0, 1.9fr);
   }
 }
-.portrait-space { height: 100%; min-height: 430px; }
+.portrait-space { display: flex; align-items: flex-end; justify-content: center; height: 100%; min-height: 430px; }
 .role-copy { padding-bottom: 36px; }
 @media (max-width: 639px) {
   .split-roles { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; gap: 16px; }

@@ -56,7 +56,7 @@ function Index() {
             </div>
           </div>
           <div className="portrait-space hidden sm:block">
-            <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-full w-full object-contain object-bottom" />
+            <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-[min(56vh,520px)] w-auto max-w-none object-contain" />
           </div>
           <div className="role-copy role-designer group/role">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
