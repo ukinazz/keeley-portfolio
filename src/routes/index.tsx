@@ -45,7 +45,7 @@ function Index() {
           <div className="portrait-space" aria-label="Space reserved for Keeley's future portrait" />
           <div className="role-copy">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
-             <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">An AI-native approach to landing pages and brand visuals, pairing thoughtful aesthetics with clear communication.</p>
+             <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Landing pages and brand visuals that balance aesthetics and clarity.</p>
           </div>
         </div>
       </section>
