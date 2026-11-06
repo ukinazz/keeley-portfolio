@@ -17,7 +17,7 @@ export const experience: Experience[] = [
     field: "AI tech startup",
     role: "Founding Marketer",
     period: "2025 to 2026",
-    summary: "First marketing hire, owning brand, website and growth from zero.",
+    summary: "Led brand, website and growth for an AI startup from launch onward.",
     highlights: [
       "Grew the website into a full content hub driving 30% of signups",
       "Owned the visual identity across X, LinkedIn and Discord",
