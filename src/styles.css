@@ -148,7 +148,7 @@
 
 html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 @font-face { font-family: "Montserrat Alternates"; src: url("/__l5e/assets-v1/39f33215-bc44-415e-9fcc-2183485000ff/montserrat-alternates-regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
-.skills-font { font-family: "Montserrat Alternates", var(--font-sans); }
+.skills-font, .dash-list { font-family: "Montserrat Alternates", var(--font-sans); }
 @font-face { font-family: "Open Sauce Two"; src: url("/__l5e/assets-v1/49eea7ab-7556-4c70-bd9d-41478f40589e/open-sauce-two-light.ttf") format("truetype"); font-weight: 300 400; font-display: swap; }
 body { font-family: var(--font-sans); }
 .portfolio-intro {
