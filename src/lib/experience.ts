@@ -21,17 +21,17 @@ export const experience: Experience[] = [
     highlights: [
       "Grew the website into a full content hub driving 30% of signups",
       "Owned the visual identity across X, LinkedIn and Discord",
-      "Built automated B2B outreach and a creator sponsorship program",
+      "Built automated outreach and a creator sponsorship program",
     ],
   },
   {
     company: "Informa Markets",
     url: "https://www.informamarkets.com/",
     domain: "informamarkets.com",
-    field: "B2B events & exhibitions",
+    field: "Events & exhibitions",
     role: "Marketing Intern",
     period: "2024 to 2025",
-    summary: "Marketing for CBME, one of the world's largest B2B trade shows.",
+    summary: "Marketing for CBME, one of the world's largest trade shows.",
     highlights: [
       "Designed social, email, web and event creative within brand guidelines",
       "Filmed and edited exhibitor interview videos for future campaigns",

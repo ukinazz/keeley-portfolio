@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const services = ["Landing page design & build", "Brand & social graphics", "Search & AI visibility", "Video content & editing", "B2B outreach automation", "Creator & affiliate marketing"];
+const services = ["Landing page design & build", "Brand & social graphics", "Search & AI visibility", "Video content & editing", "Outreach automation", "Creator & affiliate marketing"];
 
 function Index() {
   return (
