@@ -45,12 +45,13 @@ function Index() {
           <div className="role-copy role-marketer group/role">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">marketer</h2>
              <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Audience-led brand stories, campaigns and content that connect.</p>
-            <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-64 group-hover/role:opacity-100">
-              <ul className="mt-4 max-w-64 space-y-2 text-sm leading-6 text-muted-foreground">
-                <li>Campaign strategy and concept development</li>
-                <li>Audience research and messaging frameworks</li>
-                <li>Social and content planning that builds momentum</li>
-                <li>Launch narratives that give people a reason to care</li>
+            <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-96 group-hover/role:opacity-100">
+              <p className="mt-6 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">What this covers</p>
+              <ul className="mt-3 max-w-sm text-sm leading-6">
+                <li className="border-t border-border py-2.5">Campaign strategy and concept development, from first idea to full rollout</li>
+                <li className="border-t border-border py-2.5">Audience research and messaging frameworks that keep every piece on point</li>
+                <li className="border-t border-border py-2.5">Social and content planning that builds momentum over time</li>
+                <li className="border-t border-border py-2.5">Launch narratives that give people a reason to care</li>
               </ul>
             </div>
           </div>
@@ -60,12 +61,13 @@ function Index() {
           <div className="role-copy role-designer group/role">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
              <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">AI-native design for landing pages and brand visuals, balancing aesthetics and clarity.</p>
-            <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-64 group-hover/role:opacity-100">
-              <ul className="mt-4 max-w-64 space-y-2 text-sm leading-6 text-muted-foreground">
-                <li>Landing pages designed and built end to end</li>
-                <li>Brand visuals and identity systems</li>
-                <li>AI-assisted workflows for faster, sharper output</li>
-                <li>Design that guides visitors toward a clear next step</li>
+            <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-96 group-hover/role:opacity-100">
+              <p className="mt-6 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">What this covers</p>
+              <ul className="mt-3 max-w-sm text-sm leading-6">
+                <li className="border-t border-border py-2.5">Landing pages designed and built end to end, ready to ship</li>
+                <li className="border-t border-border py-2.5">Brand visuals and identity systems that stay consistent everywhere</li>
+                <li className="border-t border-border py-2.5">AI-assisted workflows for faster, sharper output</li>
+                <li className="border-t border-border py-2.5">Design that guides visitors toward a clear next step</li>
               </ul>
             </div>
           </div>
