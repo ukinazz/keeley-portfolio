@@ -59,7 +59,7 @@ function Index() {
             <article key={w.title} className="group">
               <Button asChild variant="ghost" className="block h-auto w-full overflow-hidden rounded-md border border-border bg-background p-0 transition-transform duration-500 motion-safe:hover:-translate-y-1">
                 <a href={w.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${w.title} website (opens in a new tab)`}>
-                  <img src={w.preview} alt={`${w.title} landing page built by Keeley Zou`} width={1920} height={1080} loading="lazy" className="aspect-video w-full object-cover" />
+                  <img src={w.preview} alt={`${w.title} landing page built by Keeley Zou`} width={2560} height={1600} loading="lazy" className="aspect-[8/5] w-full object-cover" />
                 </a>
               </Button>
               <div className="mt-4 flex items-center justify-between gap-3">
