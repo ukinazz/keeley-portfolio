@@ -216,10 +216,10 @@ body { font-family: var(--font-sans); }
     height: 100%;
     margin-left: -64px;
     box-shadow: -12px 0 24px rgba(0, 0, 0, 0.12);
-    transition: flex 0.5s ease, transform 0.4s ease;
+    transition: flex 0.5s ease;
   }
   .work-card:first-child { margin-left: 0; }
-  .work-card:hover { flex: 5 1 0; z-index: 10; transform: translateY(-10px); }
+  .work-card:hover { flex: 5 1 0; z-index: 10; }
   .work-card-caption {
     opacity: 0;
     transform: translateY(12px);
