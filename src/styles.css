@@ -164,8 +164,7 @@ body { font-family: var(--font-sans); }
 .portrait-space { height: 100%; min-height: 430px; }
 .role-copy { padding-bottom: 36px; }
 @media (max-width: 639px) {
-  .split-roles { grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr); min-height: 340px; gap: 8px; }
-  .portrait-space { min-height: 340px; }
+  .split-roles { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; gap: 16px; }
   .role-copy { padding-bottom: 0; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
