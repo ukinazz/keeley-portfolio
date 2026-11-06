@@ -38,12 +38,15 @@ function Index() {
         <div className="pt-8 text-center">
           <h1 className="font-greeting text-2xl font-medium sm:text-4xl">Hi, I'm Keeley Zou</h1>
         </div>
+        <div className="flex justify-center sm:hidden">
+          <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-64 w-auto object-contain" />
+        </div>
         <div className="split-roles">
           <div className="role-copy">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">marketer</h2>
              <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Audience-led brand stories, campaigns and content that connect.</p>
           </div>
-          <div className="portrait-space">
+          <div className="portrait-space hidden sm:block">
             <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-full w-full object-cover object-bottom" />
           </div>
           <div className="role-copy">
