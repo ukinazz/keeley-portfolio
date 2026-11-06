@@ -23,7 +23,7 @@ function Index() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <header className="bg-primary text-primary-foreground">
-        <nav aria-label="Main navigation" className="mx-auto grid max-w-6xl grid-cols-[1fr_auto_1fr] items-center px-6 py-5 text-sm">
+        <nav aria-label="Main navigation" className="grid grid-cols-[1fr_auto_1fr] items-center px-6 py-5 text-sm">
           <a href="#" aria-label="Keeley Zou home" className="justify-self-start font-display text-2xl font-bold">kz<span className="text-muted-foreground">.</span></a>
           <div className="flex items-center gap-4 sm:gap-8">
             <Button asChild variant="link" className="h-auto p-0 font-normal text-primary-foreground/75"><a href="#about">about</a></Button>
