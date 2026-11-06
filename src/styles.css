@@ -170,7 +170,10 @@ body { font-family: var(--font-sans); }
     grid-template-columns: minmax(300px, 1fr) minmax(200px, 0.8fr) minmax(0, 1.9fr);
   }
 }
-.portrait-space { display: flex; align-items: flex-end; justify-content: center; height: 100%; min-height: 430px; }
+.portrait-space { height: 100%; min-height: 430px; }
+@media (min-width: 640px) {
+  .portrait-space { display: flex; align-items: flex-end; justify-content: center; }
+}
 .role-copy { padding-bottom: 36px; }
 @media (max-width: 639px) {
   .split-roles { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; gap: 16px; }
