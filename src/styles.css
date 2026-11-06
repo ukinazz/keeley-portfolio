@@ -182,6 +182,9 @@ body { font-family: var(--font-sans); }
 }
 .role-copy { position: relative; z-index: 1; padding-bottom: 36px; }
 .role-copy > p { transition: opacity 0.4s ease; }
+.dash-list { list-style: none; padding-left: 0; }
+.dash-list li { position: relative; padding-left: 18px; }
+.dash-list li::before { content: "-"; position: absolute; left: 0; color: var(--foreground); }
 @media (max-width: 639px) {
   .split-roles { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; gap: 16px; }
   .role-copy { padding-bottom: 0; }
