@@ -183,6 +183,7 @@ body { font-family: var(--font-sans); }
 }
 .role-copy { position: relative; z-index: 1; padding-bottom: 36px; transition: transform 0.5s ease; }
 .role-copy > p { transition: opacity 0.4s ease; }
+.role-head { position: relative; display: inline-block; }
 .work-fan { display: flex; flex-direction: column; gap: 16px; }
 .work-card {
   position: relative;
