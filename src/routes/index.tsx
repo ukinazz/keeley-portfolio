@@ -80,8 +80,8 @@ function Index() {
 
       <section id="contact" className="mx-auto max-w-6xl px-6 py-24 text-center">
         <h2 className="font-display text-5xl md:text-7xl">Let's make something.</h2>
-        <a href="mailto:hello@keeleyzou.com" className="mt-8 inline-block rounded-full bg-primary px-8 py-4 text-primary-foreground transition hover:opacity-90">
-          hello@keeleyzou.com
+        <a href="mailto:keeeleyz@gmail.com" className="mt-8 inline-block rounded-full bg-primary px-8 py-4 text-primary-foreground transition hover:opacity-90">
+          keeeleyz@gmail.com
         </a>
         <p className="mt-16 text-sm text-muted-foreground">© 2026 Keeley Zou</p>
       </section>
