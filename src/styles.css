@@ -184,15 +184,32 @@ body { font-family: var(--font-sans); }
 .role-copy { position: relative; z-index: 1; padding-bottom: 36px; transition: transform 0.5s ease; }
 .role-copy > p { transition: opacity 0.4s ease; }
 .dash-list { list-style: none; padding-left: 0; }
-.dash-list li { position: relative; padding-left: 18px; }
-.dash-list li::before { content: "-"; position: absolute; left: 0; color: var(--foreground); }
+.dash-list li {
+  position: relative;
+  padding: 10px 14px 10px 26px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.06);
+}
+.dash-list li::before { content: "-"; position: absolute; left: 12px; color: var(--foreground); }
+.dash-list li + li { margin-top: -14px; }
+.dash-list li:nth-child(1) { z-index: 4; }
+.dash-list li:nth-child(2) { z-index: 3; }
+.dash-list li:nth-child(3) { z-index: 2; }
+.dash-list li:nth-child(4) { z-index: 1; }
 @media (min-width: 640px) {
-  .dash-list li { opacity: 0; transform: translateY(8px); transition: opacity 0.25s ease, transform 0.25s ease; }
+  .dash-list li {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.25s ease, transform 0.35s ease, margin-top 0.35s ease;
+  }
   .role-copy:hover .dash-list li { opacity: 1; transform: none; }
-  .role-copy:hover .dash-list li:nth-child(1) { transition-delay: 0.15s; }
-  .role-copy:hover .dash-list li:nth-child(2) { transition-delay: 0.28s; }
-  .role-copy:hover .dash-list li:nth-child(3) { transition-delay: 0.41s; }
-  .role-copy:hover .dash-list li:nth-child(4) { transition-delay: 0.54s; }
+  .role-copy:hover .dash-list li + li { margin-top: 8px; }
+  .role-copy:hover .dash-list li:nth-child(1) { transition-delay: 0.12s; }
+  .role-copy:hover .dash-list li:nth-child(2) { transition-delay: 0.24s; }
+  .role-copy:hover .dash-list li:nth-child(3) { transition-delay: 0.36s; }
+  .role-copy:hover .dash-list li:nth-child(4) { transition-delay: 0.48s; }
 }
 @media (max-width: 639px) {
   .split-roles { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; gap: 16px; }
