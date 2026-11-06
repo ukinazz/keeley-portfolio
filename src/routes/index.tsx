@@ -99,7 +99,7 @@ function Index() {
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-24 md:grid-cols-2">
           <div>
             <h2 className="font-display text-4xl font-bold">Hi, I'm Keeley.</h2>
-            <p className="mt-6 text-lg text-muted-foreground">
+            <p className="mt-6 text-base leading-8 text-muted-foreground">
               I'm a marketing designer with 2+ years of experience bringing strategy and creative thinking together.
               I focus on who we're speaking to, what we want to say and how the design can make that message clearer.
               From campaign concepts to everyday brand content, I aim to create work that looks good and serves a clear purpose.
