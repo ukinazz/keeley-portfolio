@@ -107,7 +107,7 @@ function Index() {
           </div>
           <ul className="grid grid-cols-2 gap-4 self-end">
             {services.map((s) => (
-              <li key={s} className="border-t border-border pt-3">{s}</li>
+              <li key={s} className="skills-font border-t border-border pt-3">{s}</li>
             ))}
           </ul>
         </div>
