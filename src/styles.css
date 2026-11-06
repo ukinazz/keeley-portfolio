@@ -186,6 +186,14 @@ body { font-family: var(--font-sans); }
 .dash-list { list-style: none; padding-left: 0; }
 .dash-list li { position: relative; padding-left: 18px; }
 .dash-list li::before { content: "-"; position: absolute; left: 0; color: var(--foreground); }
+@media (min-width: 640px) {
+  .dash-list li { opacity: 0; transform: translateY(8px); transition: opacity 0.25s ease, transform 0.25s ease; }
+  .role-copy:hover .dash-list li { opacity: 1; transform: none; }
+  .role-copy:hover .dash-list li:nth-child(1) { transition-delay: 0.15s; }
+  .role-copy:hover .dash-list li:nth-child(2) { transition-delay: 0.28s; }
+  .role-copy:hover .dash-list li:nth-child(3) { transition-delay: 0.41s; }
+  .role-copy:hover .dash-list li:nth-child(4) { transition-delay: 0.54s; }
+}
 @media (max-width: 639px) {
   .split-roles { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; gap: 16px; }
   .role-copy { padding-bottom: 0; }
