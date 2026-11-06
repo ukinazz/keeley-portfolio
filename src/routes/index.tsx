@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { portfolioWork } from "@/lib/portfolio-work";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -15,13 +16,6 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
-
-const work = [
-  { title: "Bloom Season Campaign", tag: "Campaign · Social", year: "2026", tone: "bg-primary" },
-  { title: "Northwind Rebrand", tag: "Brand Identity", year: "2025", tone: "bg-accent" },
-  { title: "Launch Week Toolkit", tag: "Product Marketing", year: "2025", tone: "bg-secondary" },
-  { title: "Field Notes Newsletter", tag: "Email · Editorial", year: "2024", tone: "bg-foreground" },
-];
 
 const services = ["Campaign concepts", "Brand systems", "Social & paid creative", "Launch & event visuals", "Email & landing pages", "Pitch decks"];
 
@@ -61,14 +55,20 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 py-14 sm:py-16">
         <div className="mb-10 flex items-center gap-6"><div className="h-px flex-1 bg-border" /><h2 className="text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">Selected work</h2><div className="h-px flex-1 bg-border" /></div>
         <div className="grid gap-8 md:grid-cols-2">
-          {work.map((w, i) => (
+          {portfolioWork.map((w) => (
             <article key={w.title} className="group">
-              <div className={`${w.tone} flex aspect-[4/3] items-end rounded-md p-6 transition-transform duration-500 motion-safe:group-hover:-translate-y-1`}><span className="text-5xl font-bold text-primary-foreground/50">0{i + 1}</span></div>
-              <div className="mt-4 flex items-baseline justify-between">
+              <Button asChild variant="ghost" className="block h-auto w-full overflow-hidden rounded-md border border-border bg-background p-0 transition-transform duration-500 motion-safe:hover:-translate-y-1">
+                <a href={w.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${w.title} website (opens in a new tab)`}>
+                  <img src={w.preview} alt={`${w.title} landing page built by Keeley Zou`} width={1920} height={1080} loading="lazy" className="aspect-video w-full object-cover" />
+                </a>
+              </Button>
+              <div className="mt-4 flex items-center justify-between gap-3">
                 <h3 className="font-display text-2xl">{w.title}</h3>
-                <span className="text-sm text-muted-foreground">{w.year}</span>
+                <Button asChild variant="link" className="h-auto shrink-0 p-0 text-sm text-muted-foreground">
+                  <a href={w.url} target="_blank" rel="noopener noreferrer" aria-label={`Open ${w.domain} (opens in a new tab)`}>{w.domain}<ArrowUpRight className="size-4" /></a>
+                </Button>
               </div>
-              <p className="text-sm text-muted-foreground">{w.tag}</p>
+              <p className="mt-1 text-sm text-muted-foreground">Landing page design & build</p>
             </article>
           ))}
         </div>
