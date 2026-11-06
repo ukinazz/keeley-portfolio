@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Keeley Zou — Marketer & Designer" },
-      { name: "description", content: "Keeley Zou — marketer and designer with 2+ years of experience in campaigns, brand systems and creative design." },
-      { property: "og:title", content: "Keeley Zou — Marketer & Designer" },
-      { property: "og:description", content: "Marketing strategy meets creative design. Explore Keeley Zou's portfolio and 2+ years of marketing and design experience." },
+      { title: "Keeley Zou | Marketing Designer" },
+      { name: "description", content: "Keeley Zou is a marketing designer with 2+ years of experience, bringing audience insight, clear messaging and thoughtful visuals to brands and campaigns." },
+      { property: "og:title", content: "Keeley Zou | Marketing Designer" },
+      { property: "og:description", content: "Explore Keeley Zou's marketing and design work, where audience insight and creative thinking come together to communicate with purpose." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -47,12 +47,12 @@ function Index() {
         <div className="split-roles">
           <div className="role-copy">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">marketer</h2>
-            <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Strategy-led campaigns that connect brands with the right people.</p>
+             <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">I turn audience insights into clear messages and campaign ideas that give people a reason to connect.</p>
           </div>
           <div className="portrait-space" aria-label="Space reserved for Keeley's future portrait" />
           <div className="role-copy">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
-            <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Thoughtful visuals that bring ideas to life and make brands memorable.</p>
+             <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">I create purposeful visuals that make brands recognisable and keep their message consistent across every touchpoint.</p>
           </div>
         </div>
       </section>
@@ -80,8 +80,9 @@ function Index() {
           <div>
             <h2 className="font-display text-4xl font-bold">Hi, I'm Keeley.</h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              With 2+ years of marketing and design experience, I bring strategy and creativity together to build
-              campaigns, brand moments and visuals people remember. Strategy first, pixels second — but the pixels matter a lot.
+              I'm a marketing designer with 2+ years of experience bringing strategy and creative thinking together.
+              I focus on who we're speaking to, what we want to say and how the design can make that message clearer.
+              From campaign concepts to everyday brand content, I aim to create work that looks good and serves a clear purpose.
             </p>
           </div>
           <ul className="grid grid-cols-2 gap-4 self-end">
@@ -93,7 +94,7 @@ function Index() {
       </section>
 
       <section id="contact" className="mx-auto max-w-6xl px-6 py-24 text-center">
-        <h2 className="font-display text-4xl font-bold md:text-6xl">Let's make something.</h2>
+         <h2 className="font-display text-4xl font-bold md:text-6xl">Let's work together.</h2>
         <Button asChild size="lg" className="mt-8"><a href="mailto:keeeleyz@gmail.com">keeeleyz@gmail.com <ArrowUpRight /></a></Button>
         <p className="mt-16 text-sm text-muted-foreground">© 2026 Keeley Zou</p>
       </section>
