@@ -169,20 +169,20 @@ body { font-family: var(--font-sans); }
   }
   .split-roles:has(.role-marketer .role-head:hover) .portrait-space { justify-content: flex-start; }
   .split-roles:has(.role-marketer .role-head:hover) .role-designer { transform: translateX(var(--role-shift)); }
-  .split-roles:has(.role-marketer .role-head:hover) .role-designer > p { opacity: 0; }
+  .split-roles:has(.role-marketer .role-head:hover) .role-designer .role-head > p { opacity: 0; }
   .split-roles:has(.role-designer .role-head:hover) {
     grid-template-columns: minmax(300px, 1fr) minmax(200px, 0.8fr) minmax(0, 1.9fr);
   }
   .split-roles:has(.role-designer .role-head:hover) .portrait-space { justify-content: flex-end; }
   .split-roles:has(.role-designer .role-head:hover) .role-marketer { transform: translateX(calc(-1 * var(--role-shift))); }
-  .split-roles:has(.role-designer .role-head:hover) .role-marketer > p { opacity: 0; }
+  .split-roles:has(.role-designer .role-head:hover) .role-marketer .role-head > p { opacity: 0; }
 }
 .portrait-space { height: 100%; min-height: 430px; }
 @media (min-width: 640px) {
   .portrait-space { display: flex; align-items: flex-end; justify-content: center; }
 }
 .role-copy { position: relative; z-index: 1; padding-bottom: 36px; transition: transform 0.5s ease; }
-.role-copy > p { transition: opacity 0.4s ease; }
+.role-head > p { transition: opacity 0.4s ease; }
 .role-head { position: relative; display: inline-block; }
 .work-fan { display: flex; flex-direction: column; gap: 16px; }
 .work-card {
