@@ -42,16 +42,32 @@ function Index() {
           <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-64 w-auto object-contain" />
         </div>
         <div className="split-roles">
-          <div className="role-copy">
+          <div className="role-copy group/role peer/marketer">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">marketer</h2>
              <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">Audience-led brand stories, campaigns and content that connect.</p>
+            <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-64 group-hover/role:opacity-100">
+              <ul className="mt-4 max-w-64 space-y-2 text-sm leading-6 text-muted-foreground">
+                <li>Campaign strategy and concept development</li>
+                <li>Audience research and messaging frameworks</li>
+                <li>Social and content planning that builds momentum</li>
+                <li>Launch narratives that give people a reason to care</li>
+              </ul>
+            </div>
           </div>
           <div className="portrait-space hidden sm:block">
-            <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-full w-full object-contain object-bottom" />
+            <img src={keeleyPortrait.url} alt="Illustrated portrait of Keeley Zou" width={1920} height={1920} className="h-full w-full object-contain object-bottom transition-transform duration-500 sm:peer-hover/marketer:translate-x-10 sm:peer-hover/designer:-translate-x-10" />
           </div>
-          <div className="role-copy">
+          <div className="role-copy group/role peer/designer">
             <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">designer</h2>
              <p className="mt-4 max-w-64 text-sm leading-7 text-muted-foreground sm:text-base">AI-native design for landing pages and brand visuals, balancing aesthetics and clarity.</p>
+            <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover/role:max-h-64 group-hover/role:opacity-100">
+              <ul className="mt-4 max-w-64 space-y-2 text-sm leading-6 text-muted-foreground">
+                <li>Landing pages designed and built end to end</li>
+                <li>Brand visuals and identity systems</li>
+                <li>AI-assisted workflows for faster, sharper output</li>
+                <li>Design that guides visitors toward a clear next step</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
