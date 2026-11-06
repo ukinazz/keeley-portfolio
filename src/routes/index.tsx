@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const services = ["Campaign concepts", "Brand systems", "Social & paid creative", "Launch & event visuals", "Email & landing pages", "Pitch decks"];
+const services = ["Landing page design & build", "Visual identity", "SEO & GEO", "Short-form video", "B2B outreach automation", "Creator & affiliate marketing"];
 
 function Index() {
   return (
