@@ -94,7 +94,7 @@ function Index() {
         </div>
       </section>
 
-      <section id="about" className="border-y border-border">
+      <section id="about">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-24 md:grid-cols-2">
           <div>
             <h2 className="font-display text-4xl font-bold">Hi, I'm Keeley.</h2>
