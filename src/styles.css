@@ -270,3 +270,24 @@ body { font-family: var(--font-sans); }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 .role-details .dash-list li + li { margin-top: 14px; }
+
+.graphic-wall { position: relative; isolation: isolate; overflow: hidden; height: clamp(360px, 58svh, 640px); border: 1px solid var(--border); border-radius: 12px; background: var(--card); contain: paint; cursor: pointer; }
+.graphic-wall:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
+.graphic-wall-layer { position: absolute; inset: 0; }
+.graphic-tile { position: absolute; left: 0; top: 0; overflow: hidden; border-radius: 6px; background: var(--background); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 10px 22px rgba(0, 0, 0, 0.07); pointer-events: none; will-change: transform; backface-visibility: hidden; transition: filter 0.35s ease; }
+.graphic-tile img { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1); transition: filter 0.3s ease; }
+/* the piece under the cursor, and the one picked, come back in colour */
+.graphic-tile.is-hot img, .graphic-tile.is-picked img { filter: none; }
+.graphic-wall-caption { position: absolute; inset-inline: 0; bottom: 0; z-index: 5; padding: 30px 20px 14px; text-align: center; font-size: 0.8rem; color: var(--foreground); background: linear-gradient(to top, var(--background) 55%, transparent); opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+.graphic-wall-caption[data-visible="true"] { opacity: 1; }
+@media (hover: none) { .graphic-wall-caption { display: none; } }
+@media (prefers-reduced-motion: reduce) { .graphic-tile { will-change: auto; } }
+
+/* Repeat copies that only fill a gap sit behind the pile and give up a corner. */
+.graphic-tile[data-tuck] { opacity: 0.9; }
+
+/* One piece picked: everything else recedes behind it. */
+.graphic-wall-layer.is-picking .graphic-tile { filter: blur(4px) brightness(0.72) saturate(0.7); }
+.graphic-tile.is-picked { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 24px 48px rgba(0, 0, 0, 0.2); }
+/* the dim rule above is three classes deep, so clearing the blur has to be too */
+.graphic-wall-layer.is-picking .graphic-tile.is-picked { filter: none; }

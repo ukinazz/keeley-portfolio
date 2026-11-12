@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { GraphicWall } from "@/components/GraphicWall";
 import { portfolioWork } from "@/lib/portfolio-work";
 import { experience } from "@/lib/experience";
 import keeleyPortrait from "@/assets/keeley-portrait-trimmed.png";
@@ -92,6 +93,14 @@ function Index() {
             </a>
           ))}
         </div>
+        </div>
+      </section>
+
+      <section id="graphics" aria-labelledby="graphics-heading">
+        <div className="mx-auto max-w-6xl px-6 pb-16 sm:pb-20">
+          <h2 id="graphics-heading" className="mb-4 text-center text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">Brand and social graphics design</h2>
+          <p className="mb-8 text-center text-sm text-muted-foreground">Artwork for events, social and brand.</p>
+          <GraphicWall />
         </div>
       </section>
 

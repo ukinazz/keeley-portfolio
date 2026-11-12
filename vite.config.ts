@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // GitHub Pages serves project sites under /<repo>/; set VITE_BASE to match when
 // the site is not deployed to a root domain.
-const base = process.env.VITE_BASE || "/";
+const base = process.env["VITE_BASE"] || "/";
 
 export default defineConfig({
   base,
